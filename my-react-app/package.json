@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
   "scripts": {
-    "dev": "concurrently \"vite --open\" \"cd ../film_rest && nodemon . \"",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview" 
+    "preview": "vite preview",
+    "start": "serve -s dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -19,6 +21,7 @@
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.63.0",
     "react-router-dom": "^7.9.2",
+    "serve": "^14.2.5",
     "yup": "^1.7.1"
   },
   "devDependencies": {
